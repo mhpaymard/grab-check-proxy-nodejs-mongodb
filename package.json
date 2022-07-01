@@ -1,0 +1,22 @@
+{
+  "name": "proxy-checker-grabber",
+  "version": "1.0.0",
+  "description": "grab & check proxies in nodejs and mongodb",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "grab",
+    "check",
+    "grabber",
+    "checker",
+    "proxy",
+    "proxies",
+    "nodejs",
+    "node",
+    "mongodb"
+  ],
+  "author": "MohammadHosein Paymard",
+  "license": "MIT"
+}
