@@ -1,0 +1,60 @@
+
+### get all proxies
+Get http://localhost:3001/proxy
+Authorization: Basic c2FsYW1qaWdhcjoxMjMzMjE=
+
+### create one proxy
+Post http://localhost:3001/proxy
+Authorization: Basic c2FsYW1qaWdhcjoxMjMzMjE=
+Content-Type: application/json
+
+{
+    "ip":"192.168.1.1",
+    "port":8080,
+    "protocol":"http",
+    "country":"germany",
+    "city":"denmark"
+}
+
+### create many proxy
+Post http://localhost:3001/proxy/list
+Authorization: Basic c2FsYW1qaWdhcjoxMjMzMjE=
+Content-Type: application/json
+
+{
+    "proxies":[
+        {
+            "ip":"192.168.1.222",
+            "port":8080,
+            "protocol":"http"
+        },{
+            "ip":"192.168.1.233",
+            "port":8080,
+            "protocol":"http",
+            "country":"germany",
+            "city":"denmark"
+        }
+    ]
+}
+
+### delete proxy
+Delete http://localhost:3001/proxy
+Content-Type: application/json
+Authorization: Basic c2FsYW1qaWdhcjoxMjMzMjE=
+
+{
+    "id":"62c1c20b6e693288610d60d0"
+}
+
+### filter proxy
+Post http://localhost:3001/proxy/filter
+Authorization: Basic c2FsYW1qaWdhcjoxMjMzMjE=
+Content-Type: application/json
+
+{
+    "filters":{
+        "country":{
+            "$eq":"ZZ"
+        }
+    }
+}

@@ -32,8 +32,8 @@ module.exports = class Application{
         }
     }
     configApplication(){
-        this.#express.json();
-        this.#express.urlencoded({extended:true});
+        this.#app.use(this.#express.json());
+        this.#app.use(this.#express.urlencoded({extended:true}));
     }
     configRoutes(){
         this.#app.use(AllRoutes);
@@ -51,7 +51,7 @@ module.exports = class Application{
                 status:404,
                 message:'صفحه پیدا نشد',
                 success:false
-            })
+            });
         })
         this.#app.use((error,req,res,next)=>{
             const status = error?.status || 500;
@@ -60,7 +60,7 @@ module.exports = class Application{
                 status,
                 message,
                 success:false
-            })
+            });
         })
     }
 }
