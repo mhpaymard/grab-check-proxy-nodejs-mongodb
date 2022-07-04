@@ -1,3 +1,5 @@
+const { ProxyController } = require('./http/controllers/proxy.controller');
+const { sleep } = require('./modules/functions');
 const { AllRoutes } = require('./routes/router');
 
 module.exports = class Application{
@@ -9,6 +11,7 @@ module.exports = class Application{
         this.configRoutes();
         this.createServer(PORT);
         this.errorHandle();
+        this.checkProxy();
     }
     configDatabase(DB_URL){
         const mongoose = require('mongoose');
@@ -24,11 +27,17 @@ module.exports = class Application{
             console.log(err);
         }
     }
-    checkProxy(){
+    async checkProxy(){
         try{
-
+            await ProxyController.checkProxy();
+            console.log('check proxy running on 1 minutes later..')
+            await sleep(60000);
+            return this.checkProxy();
         }catch(err){
             console.log(err);
+            console.log('check proxy running on 10 seconds later..')
+            await sleep(10000);
+            return this.checkProxy();
         }
     }
     configApplication(){

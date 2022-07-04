@@ -23,18 +23,197 @@ Content-Type: application/json
 
 {
     "proxies":[
-        {
-            "ip":"192.168.1.222",
-            "port":8080,
-            "protocol":"http"
-        },{
-            "ip":"192.168.1.233",
-            "port":8080,
-            "protocol":"http",
-            "country":"germany",
-            "city":"denmark"
-        }
-    ]
+    {
+        "ip": "45.14.174.150",
+        "port": 80,
+        "protocol": "http"
+    },
+    {
+        "ip": "45.14.174.59",
+        "port": 80,
+        "protocol": "http"
+    },
+    {
+        "ip": "45.14.174.215",
+        "port": 80,
+        "protocol": "http"
+    },
+    {
+        "ip": "45.14.174.173",
+        "port": 80,
+        "protocol": "http"
+    },
+    {
+        "ip": "45.14.174.252",
+        "port": 80,
+        "protocol": "http"
+    },
+    {
+        "ip": "45.14.174.16",
+        "port": 80,
+        "protocol": "http"
+    },
+    {
+        "ip": "45.14.174.50",
+        "port": 80,
+        "protocol": "http"
+    },
+    {
+        "ip": "45.14.174.61",
+        "port": 80,
+        "protocol": "http"
+    },
+    {
+        "ip": "45.14.174.80",
+        "port": 80,
+        "protocol": "http"
+    },
+    {
+        "ip": "45.14.174.181",
+        "port": 80,
+        "protocol": "http"
+    },
+    {
+        "ip": "45.14.174.103",
+        "port": 80,
+        "protocol": "http"
+    },
+    {
+        "ip": "45.14.174.128",
+        "port": 80,
+        "protocol": "http"
+    },
+    {
+        "ip": "45.14.174.154",
+        "port": 80,
+        "protocol": "http"
+    },
+    {
+        "ip": "45.14.174.95",
+        "port": 80,
+        "protocol": "http"
+    },
+    {
+        "ip": "45.14.174.99",
+        "port": 80,
+        "protocol": "http"
+    },
+    {
+        "ip": "45.14.174.157",
+        "port": 80,
+        "protocol": "http"
+    },
+    {
+        "ip": "45.14.174.229",
+        "port": 80,
+        "protocol": "http"
+    },
+    {
+        "ip": "45.14.174.81",
+        "port": 80,
+        "protocol": "http"
+    },
+    {
+        "ip": "45.14.174.55",
+        "port": 80,
+        "protocol": "http"
+    },
+    {
+        "ip": "45.14.174.68",
+        "port": 80,
+        "protocol": "http"
+    },
+    {
+        "ip": "45.14.174.54",
+        "port": 80,
+        "protocol": "http"
+    },
+    {
+        "ip": "45.14.174.17",
+        "port": 80,
+        "protocol": "http"
+    },
+    {
+        "ip": "45.14.174.145",
+        "port": 80,
+        "protocol": "http"
+    },
+    {
+        "ip": "45.14.174.15",
+        "port": 80,
+        "protocol": "http"
+    },
+    {
+        "ip": "45.14.174.140",
+        "port": 80,
+        "protocol": "http"
+    },
+    {
+        "ip": "45.14.174.244",
+        "port": 80,
+        "protocol": "http"
+    },
+    {
+        "ip": "45.14.174.35",
+        "port": 80,
+        "protocol": "http"
+    },
+    {
+        "ip": "45.14.174.115",
+        "port": 80,
+        "protocol": "http"
+    },
+    {
+        "ip": "45.14.174.237",
+        "port": 80,
+        "protocol": "http"
+    },
+    {
+        "ip": "45.14.174.125",
+        "port": 80,
+        "protocol": "http"
+    },
+    {
+        "ip": "45.14.174.176",
+        "port": 80,
+        "protocol": "http"
+    },
+    {
+        "ip": "45.14.174.151",
+        "port": 80,
+        "protocol": "http"
+    },
+    {
+        "ip": "45.14.174.87",
+        "port": 80,
+        "protocol": "http"
+    },
+    {
+        "ip": "45.14.174.30",
+        "port": 80,
+        "protocol": "http"
+    },
+    {
+        "ip": "45.14.174.148",
+        "port": 80,
+        "protocol": "http"
+    },
+    {
+        "ip": "45.14.174.134",
+        "port": 80,
+        "protocol": "http"
+    },
+    {
+        "ip": "45.14.174.111",
+        "port": 80,
+        "protocol": "http"
+    },
+    {
+        "ip": "45.14.174.224",
+        "port": 80,
+        "protocol": "http"
+    }
+]
 }
 
 ### delete proxy
@@ -43,7 +222,7 @@ Content-Type: application/json
 Authorization: Basic c2FsYW1qaWdhcjoxMjMzMjE=
 
 {
-    "id":"62c1c20b6e693288610d60d0"
+    "id":"62c2031eb7ec77f4b78edc95"
 }
 
 ### filter proxy
